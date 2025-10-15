@@ -42,4 +42,22 @@ justify-content: center;
     width: 100px;
     height: 100px;
     background-color: lightgreen;
-    border-radius: 50%;}
+    border-radius:50%;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes move{
+    0% {transform: translateX(0px);
+    background-color: lightgreen;}
+25% {transform: translateX(400px);
+    background-color: orange;}
+    50% {transform: translateX(800px);
+    background-color: red;}
+    100%{
+        transform: translateX(1000px);
+        background-color: black;
+    }
+}
