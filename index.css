@@ -61,3 +61,36 @@ justify-content: center;
         background-color: black;
     }
 }
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: lightyellow;
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    0% {
+        left: 0px;
+        background-color: lightyellow;
+    }
+    25%{
+        left: 300px;
+        top: 0px;
+        background-color: orange;
+    }
+    50%{
+        left: 300px;
+        top: -100px;
+        background-color: red;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+        background-color: black;
+    }
+
+}
