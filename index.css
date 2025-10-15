@@ -1,0 +1,45 @@
+
+
+
+.flex-box{
+    display: flex;
+    width: 800px;
+    height: 500px !important;
+height: auto;
+    background-color: lightpink;
+    align-items:center;
+justify-content: space-evenly;
+flex-direction: column;
+
+
+}
+
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.circle:hover{
+    background-color: red;
+    scale: 0;;
+}
+
+
+.product:hover{
+    background-color: yellow;
+   
+  scale:0;
+}
+
+
+.circle1{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border-radius: 50%;}
