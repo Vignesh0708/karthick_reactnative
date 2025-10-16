@@ -70,11 +70,13 @@ justify-content: center;
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    position: relative;
 }
 
 @keyframes rotate {
     0% {
         left: 0px;
+        top: 0px;
         background-color: lightyellow;
     }
     25%{
@@ -84,7 +86,7 @@ justify-content: center;
     }
     50%{
         left: 300px;
-        top: -100px;
+        top: 100px;
         background-color: red;
     }
     100%{
