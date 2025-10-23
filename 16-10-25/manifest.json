@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Your Extension Name",
+  "version": "1.0.0",
+  "description": "Description of your extension",
+  "action": {
+    "default_popup": "new.html",
+    "default_icon": {
+      "16": "src/assets/icon16.png",
+      "48": "src/assets/icon48.png",
+      "128": "src/assets/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["src/assets/styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/assets/styles.css",
+        "src/assets/locales/en/translation.json",
+        "src/assets/icons/*.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ]
+}
