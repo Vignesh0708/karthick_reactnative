@@ -8,7 +8,14 @@ First three days: 16-10-2025 starts from here
   var
   let
   cost
-*Database
+*Datatype
+  string
+  number
+  boolean
+  undefined
+  null
+  object
+  array
 *operators
 *fucntions
 *conditions
