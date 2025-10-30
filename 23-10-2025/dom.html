@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="dom"></p>
+    <p class="dom1"></p>
+
+    <h2 id="remove"> i am out</h2>
+
+    <script>
+
+        document.getElementById("dom").innerHTML = "Hello, DOM!";
+        document.querySelector(".dom1").innerHTML = "Hello, DOM Class!";
+
+        let karthick  = document.createElement("h1");
+        karthick.innerHTML = "This is created using createElement";
+        document.body.appendChild(karthick);
+
+        let removeElement = document.getElementById("remove");
+        removeElement.remove();
+        
+
+    </script>
+</body>
+</html>
