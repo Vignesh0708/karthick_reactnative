@@ -43,9 +43,107 @@
 
             console.log(testone());
 
-            
+
+            for (let i = 0; i <= 5; i++) {
+                console.log("Loop i value:", i);
+            }
+
+
+            let name = "besant";
+
+            function greet(name) {
+                
+                console.log("Hello, " + name);
+            }
+
+
+            greet(name);
+
+
    
+function add( a, b){
+    
+    return a+b;
+}
+
+let sum = add("vignesh" + " besant", " welcome to javascript");
+console.log(sum)
+
+
+const multiply = function(a, b){
+    return a * b;  
+}
+
+console.log(multiply(5, 10));
+
+
+const minus = (c,d) =>{
+    return c - d;
+}
+
+console.log(minus(20, 5));
+
+
+let vote = 20;
+
+if ( vote >= 18) {
+    console.log("You are eligible to vote.");
+} else {
+    console.log("You are not eligible to vote.");
+}
+
+
+let age = 4;
+
+
+if (age < 2) {
+    console.log("You are a baby."); 
+} else if (age >= 2 &&  age <= 3) {
+    console.log("pre-kg")
+}else if (age > 3 && age < 5) {
+    console.log("ukg");
+} else  {
+    console.log("You are a child.");     }
+
+
+
+    let mark = 80;
+
+
+    switch (mark) {
+        case 90:
+            console.log("Grade A");
+            break;
+        case 80:
+            console.log("Grade B");
+            break;
+        case 70:
+            console.log("Grade C");
+            break;
+        default:
+            console.log("Grade D");
+    }
+
+
+    let student = ["first", "second", "third", "fourth", "fifth","new","hhh"];
+
+    let kids = new Array("alice", "bob", "charlie");
+
+ console.log("second value", student[1]);
+
+ console.log(student.length);
+
+ let kidss = student.slice(1,4);
+ console.log("sliced array:", kidss);
+
+
+ let girls = student.splice (3,2,"sixth",);
+ console.log("after splice:", student);
 
     </script>
+
+
+
+
 </body>
 </html>
