@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let vegs = ["carrot", "beans"];
+        vegs.push("apple");
+        console.log(vegs);
+
+        let dress = ["pant", "shirt"];
+        dress.pop();
+        console.log(dress);
+
+
+        let news = ["thanthi","news7","polimar"]
+console.log(news)
+ console.log(news.shift());
+
+news.unshift("indianexpress");
+console.log(news);
+
+console.log(news.indexOf("polimar"));
+console.log(news.includes("vijaytv"));
+console.log(news.join());
+console.log(news.reverse());
+
+console.log(news.sort())
+
+let g = [2,4,6,8,10,12,14];
+let gh = g.map(n =>n % 2 === 0);
+
+console.log(gh);
+
+let numbers = [1,2,7,98,89,6,88,543];
+ evennum = numbers.filter(n =>n %2 === 0);
+console.log(evennum);
+
+
+red = numbers.reduce((total,n)=> total + n,0);
+console.log(red);
+
+
+
+
+let a = [12,98,78]
+let b = [67,90,32]
+
+let c = a+","+b+"&"+"numbers";
+console.log(c);
+
+
+
+    </script>
+</body>
+</html>
