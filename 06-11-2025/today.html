@@ -10,6 +10,7 @@
 
     <p id="name">karthick</p>
 
+    <p id="name2"></p>
     <script>
 
 
@@ -25,7 +26,11 @@
 let namchange = document.getElementById("name");
 namchange.style.color = "blue";
 namchange.innerHTML = "Changed Name";
-document.body.appendChild(namchange);
+
+let namchange2 = document.getElementById("name2");
+namchange2.style.color = "green";
+namchange2.appendChild(document.createTextNode("Appended Name"));
+
     </script>
 </body>
 </html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="name">karthick</p>
+
+    <p id="name2"></p>
+
+    <button id="myButton">Click Me</button>
+    <script>
+
+
+        let employee = {
+            name: "John Doe",
+            age: 30,
+            position: "Software Engineer"
+        }
+
+        console.log(employee.age);
+
+
+let namchange = document.getElementById("name");
+namchange.style.color = "blue";
+namchange.innerHTML = "Changed Name";
+
+let namchange2 = document.getElementById("name2");
+namchange2.style.color = "green";
+namchange2.appendChild(document.createTextNode("Appended Name"));
+
+
+let hospital = new Object();
+
+hospital.name = "City Hospital";
+hospital.location = "Downtown";
+
+console.log(hospital.name);
+
+
+let monitor = {
+    brand: "Dell",
+    size: "27 inches",
+    resolution: "2560x1440",
+    category : ["Electronics", "Computer Accessories"],
+    specfication : {
+        refreshRate: "144Hz",
+        panelType: "IPS"
+
+    },
+returnable : function() {
+    console.log("This monitor is returnable within 30 days.");
+    }
+
+}
+
+specfication = monitor.specfication;
+
+specfication.size = "32 inches";
+
+console.log ( monitor.specfication.size);
+console.log ( monitor.category);
+
+console.log ( monitor.returnable());
+
+
+////events
+
+
+let  myButton = document.getElementById("myButton");
+
+myButton.addEventListener("click", function() {
+    alert ("Button was clicked!");  
+});
+
+
+
+    </script>
+    
+</body>
+</html>
