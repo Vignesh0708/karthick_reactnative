@@ -16,8 +16,8 @@ function Simple(props) {
         <div className="card" style={{ width: "18rem" }} >
             <img src={Logo} className="card-img-top" alt="..." />
             <div className="card-body">
-                <h5 className="card-title">{props.title}</h5>
-                <p className="card-text">{props.text}</p>
+                <h5 className="card-title">{cardList.title}</h5>
+                <p className="card-text">{cardsList.text}</p>
                 <a href="#" className="btn btn-primary">Go some</a>
             </div>
         </div >
