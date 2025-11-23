@@ -1,0 +1,12 @@
+//state
+
+
+//state types?
+
+
+localstate => useState
+globalstate => context api, redux, mobx
+derived state => memoization
+ui state => compantent changes
+server state => data from backend
+form state => form data management

@@ -1,30 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/navbar/navbar';
-import Cards from './components/props/card';
 import React from 'react';
-import Simple from './components/props/simple';
-import MyCard from './components/props/mycard.jsx';
+import './App.css';
 import PropsNavbar from './components/props/Navbar';
-import Logo from './images/logo192.png';
-
+import MyCard from './components/props/mycard.jsx';
+import Simple from './components/props/simple';
+import Card from './components/props/card.js';
+import New from './components/state/New.js';
+import Bird from './images/tropical-macaw-perched-vibrant-feathers-focus-generated-by-ai.jpg';
 
 function App() {
+  // const sampleCards = [
+  //   { id: 1, title: "Karthick", text: "Some quick example...", image: Logo },
+  //   { id: 2, title: "John", text: "Another example...", image: Logo },
+  //   { id: 3, title: "Sarah", text: "Yet another card...", image: Logo }
+  // ];
+
+
+  const cardData = [
+    { id: 1, title: "Karthick", text: "Some quick example text...", image: Bird },
+    { id: 2, title: "John", text: "Another example text for the second card.", image: Bird },
+    { id: 3, title: "Sarah", text: "Yet another card example with different content.", image: Bird }
+  ];
+
   return (
     <>
-      <PropsNavbar />
+      {/* <PropsNavbar />
       <div style={{ display: 'flex', alignItems: 'flex-start' }}>
-        <aside style={{ width: 240, marginTop: 16, marginLeft: 16, marginBottom: 16, padding: 16, background: '#f8f9fa', borderRight: '1px solid #e9ecef', boxSizing: 'border-box', height: '100vh', position: 'sticky', top: 0, overflowY: 'auto' }}>
+        <aside style={{ width: 240, margin: 16, padding: 16, background: '#f8f9fa', borderRight: '1px solid #e9ecef', height: '100vh', position: 'sticky', top: 0, overflowY: 'auto' }}>
           <h2>Sidebar Component</h2>
           <p>This is a sidebar component.</p>
         </aside>
 
         <main style={{ flex: 1, padding: 16 }}>
-          <MyCard title="karthick" text="Some quick example text to build on the card title" image={Logo} />
-          <MyCard title="karthick" text="Some quick example text to build on the card title" image={Logo} />
-          <MyCard title="karthick" text="Some quick example text to build on the card title" image={Logo} />
+          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 24 }}>
+            <MyCard title="Karthick" text="Some quick example text..." image={Logo} />
+            <MyCard title="Karthick" text="Some quick example text..." image={Logo} />
+            <MyCard title="Karthick" text="Some quick example text..." image={Logo} />
+          </div>
+
+          <hr style={{ margin: '24px 0' }} />
+
+          <Simple data={sampleCards} />
         </main>
-      </div>
+      </div> */}
+
+      <Simple data={cardData} />
+      <Card />
+      <New />
     </>
   );
 }
