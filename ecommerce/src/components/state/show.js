@@ -4,8 +4,13 @@ import { React, useState } from "react";
 function Show() {
     const [name, setName] = useState("");
     //const [mail, setMail] = useState("");
+    const changeName = (e) => {
+        const value = e.target.value;
 
-    const pattern = /^[a-zA-Z]/;
+        if (/^[a-zA-Z]*$/.test(value)) {
+            setName(value);
+        }
+    }
 
 
 
@@ -16,10 +21,10 @@ function Show() {
                 placeholder="enter full name"
                 value={name}
                 onChange={
-                    (e) => pattern.test(e.target.value) ? setName(e.target.value) : alert("please enter valid user name")
+                    changeName
                 }
-            /> 
-            <h3>Your name is: {name}</h3>   
+            />
+            <h3>Your name is: {name}</h3>
         </div>
     )
 }
