@@ -6,6 +6,7 @@ import Simple from './components/props/simple';
 import Card from './components/props/card.js';
 import New from './components/state/New.js';
 import Bird from './images/tropical-macaw-perched-vibrant-feathers-focus-generated-by-ai.jpg';
+import Show from './components/state/show.js';
 
 function App() {
   // const sampleCards = [
@@ -46,6 +47,8 @@ function App() {
       <Simple data={cardData} />
       <Card />
       <New />
+      <Show />
+       
     </>
   );
 }
