@@ -5,6 +5,7 @@ import { useState } from "react";
 function New() {
     const [count, setCount] = useState(0);
 
+
     return (
         <div style={{ backgroundColor: 'lightgray', padding: '20px', textAlign: 'center' }}>
             <h2>Count: {count}</h2>
