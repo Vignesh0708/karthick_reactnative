@@ -20,9 +20,7 @@ function Show() {
             <input
                 placeholder="enter full name"
                 value={name}
-                onChange={
-                    changeName
-                }
+                onChange={changeName}
             />
             <h3>Your name is: {name}</h3>
         </div>

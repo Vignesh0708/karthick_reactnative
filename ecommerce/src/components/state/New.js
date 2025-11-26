@@ -1,9 +1,13 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 function New() {
     const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        console.log("Count value changed:", count);
+    }, [count]);
 
 
     return (
