@@ -4,17 +4,18 @@ import React, { useEffect, useState, useRef, Children } from "react";
 function CardEffect({ title, children }) {
     return (
         <div style={{
-            background: "yellow",
+            background: "white",
             borderRadius: 12,
-            width: 200,
-            height: 400,
+            padding: 16,
+            boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
+            marginBottom: 24
 
         }}>
             <h1>
                 {title}
             </h1>
             <div>
-                {Children}
+                {children}
             </div>
 
 
@@ -22,3 +23,5 @@ function CardEffect({ title, children }) {
     )
 
 }
+
+export default CardEffect;

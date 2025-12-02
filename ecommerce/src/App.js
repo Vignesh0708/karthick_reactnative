@@ -7,7 +7,10 @@ import Card from './components/props/card.js';
 import New from './components/state/New.js';
 import Bird from './images/tropical-macaw-perched-vibrant-feathers-focus-generated-by-ai.jpg';
 import Show from './components/state/show.js';
+import CleanupEffect from './components/UseEffect/CleanupEffect.js';
+import DependencyEffect from './components/UseEffect/DependancyEffect.js';
 
+import MountFetch from './components/UseEffect/MountFetch.js';
 function App() {
   // const sampleCards = [
   //   { id: 1, title: "Karthick", text: "Some quick example...", image: Logo },
@@ -48,7 +51,9 @@ function App() {
       <Card />
       <New />
       <Show />
-       
+      <MountFetch />
+      <DependencyEffect />
+      <CleanupEffect />
     </>
   );
 }
