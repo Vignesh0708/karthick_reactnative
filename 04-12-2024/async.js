@@ -1,5 +1,10 @@
 
 function loadData() {
-    document.getElementById("aysnc").innerHTML = "hi,this is async callback"
+    document.getElementById("aysnc").innerHTML = "loading...";
 
-}
+    setTimeout(() => {
+        document.getElementById("aysnc").innerHTML = "i'm loaded"
+
+    }, 1800);
+
+};
