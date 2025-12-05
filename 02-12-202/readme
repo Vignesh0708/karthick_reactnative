@@ -1,8 +1,11 @@
 call back:
  
+
+  synchronies, 
+  asynchronies, 
+
    error call back, 
-   synchronies, 
-   asynchronies,  
+   
    multiple callback,  
    pyramid/helm all back, 
    multiple call back, 

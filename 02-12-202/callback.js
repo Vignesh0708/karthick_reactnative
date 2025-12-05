@@ -48,8 +48,13 @@ function message(name, ab) {
     ab(gh);
 }
 
+console.log(message(ab))
 
 message("Charlie", function (gh) {
+
+
     console.log("Callback function called with message: " + gh);
-});
+
+}
+);
 
