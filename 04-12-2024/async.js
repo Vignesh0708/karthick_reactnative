@@ -3,8 +3,18 @@ function async() {
 
     setTimeout(() => {
         //document.getElementById("aysnc").innerHTML = "i'm loaded"
-        document.getElementsByClassName("mza-wrapper")[0].innerHTML = "i'm loaded"
+        document.getElementById("aysnc").innerHTML = "i'm loaded"
 
     }, 1800);
 
 };
+
+function loader() {
+    document.getElementById("loader").style.display = "none";
+
+    setTimeout(() => {
+
+
+        document.getElementById("loader").style.display = "block";
+    }, 3000);
+}
